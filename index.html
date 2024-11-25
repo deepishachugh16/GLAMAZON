@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GLAMAZON</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(255, 203, 196, 0.74);
+        }
+
+        header {
+            background-color: #202;
+            color: magenta;
+            padding: 15px;
+            text-align: center;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background-color: pink;
+            padding: 10px;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+        }
+
+
+        .hero {
+            background-image: url('https://img.freepik.com/free-photo/sensual-stylish-woman-grey-hat-blouse-gazing_176420-20652.jpg?t=st=1731248834~exp=1731252434~hmac=b1e3fb779efac11fa29951a1237d891171035fc3bbd4946ccc24dd3af54e89e1&w=900');
+            background-size: auto;
+            color: black;
+            padding: 100px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color:rgba(255, 203, 196, 0.74);
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+        .search{padding: 8px}
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>GLAMAZON</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+   <a href="#class="cart-icon">🛒</a>
+<div class="search"><input placeholder="search section" ></div>
+</nav>
+
+<section class="hero" id="home">
+    <h1>Welcome to GLAMAZON</h1>
+    <p>Your one-stop shop for the latest trends.</p>
+</section>
+<section class="section" id="about">
+    <h2>About Us</h2>
+    <p>GLAMAZON is dedicated to bringing you the latest in fashion trends. We believe in style, quality, and sustainability.</p>
+</section>
+<section class="section" id="products">
+    <h2>Featured Products</h2>
+    <div class="products">
+        <div class="product">
+            <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F6e%2Ff4%2F6ef42067f41d67211f482568841ad4568b3f81d8.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/fullscreen]" alt="Product 1">
+            <h3>Straight High Jeans</h3>
+            <p>MRP:1,499</p>
+<button onclick="myFunction()">ADD</button>
+<button onclick="myFunction1()">REMOVE</button>
+<script>
+function myFunction() {
+  alert("your item is added to cart");
+}
+function myFunction1() {
+  alert("your item is removed from the cart");
+}
+
+</script>
+        </div>
+        <div class="product">
+            <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F3c%2F37%2F3c370ebcd2b94cac0dd5e35b003e3e6f574be4c5.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/fullscreen]" alt="Product 2">
+            <h3>Ribbed jersey top</h3>
+ <p>MRP:1,399</p>
+<button onclick="myFunction()">ADD</button>
+<button onclick="myFunction1()">REMOVE</button>
+
+<script>
+function myFunction() {
+  alert("your item is added to cart");
+}
+function myFunction1() {
+  alert("your item is removed from the cart");
+}
+</script>
+
+        </div>
+        <div class="product">
+            <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F37%2F0a%2F370a3fe467a80e9a3fb79d8c12f2a7b2f269a3a3.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/fullscreen]" alt="Product 3">
+            <h3>Jumper</h3>
+            <p>MRP:999</p>
+<button onclick="myFunction()">ADD</button>
+<button onclick="myFunction1()">REMOVE</button>
+
+<script>
+function myFunction() {
+  alert("your item is added to cart");
+}
+function myFunction1() {
+  alert("your item is removed from the cart");
+}
+</script>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@glamazon.com</p>
+    <p>Phone: +99 37675 68200</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 glamazon. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
